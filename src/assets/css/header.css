@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    min-width: 1090px;
+    background-color: #fff;
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    color: #333;
+    font-size: 12px;
+    position: relative;
+}
+ul,ol {
+    list-style: none;
+}
+
+#yx-top a {
+    text-decoration: none;
+}
+
+#yx-top img {
+    border: 0;
+    vertical-align: top;
+}
+
+.yx-dropdown::before,
+.yx-row::before,
+.yx-row::after,
+.yx-foot .yx-row::before,
+.yx-foot .yx-siteEnsure::before
+{
+    content: " ";
+    display: table;
+}
+.yx-dropdown::after,
+.yx-row::after,
+{
+    clear: both;
+}
+#yx-ComponentTop i,#yx-ComponentFoot i {
+    font-style: normal;
+}
+/* ==== 顶部的顶部 ==== */
+.yx-row {
+    margin: 0 auto;
+    position: relative;
+    width: 1090px;
+    /* height: 36px; */
+}
+.yx-top-siteNav {
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+    z-index: 10;
+}
+.yx-top-siteNav .yx-row a {
+    color: #ccc;
+}
+
+.yx-top-siteNav a, .yx-foot a{
+    text-decoration: none;
+}
+
+.yx-top-siteNav .yx-siteNavItem {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    color: #ccc;
+}
+/* 顶部的顶部的左边  + 顶部顶部的右边*/
+.yx-top-siteNav .yx-top-siteNav-l{
+    float: left;
+}
+.yx-top-siteNav .yx-siteNavItem .yx-noticeList a {
+    color: #b4a078
+}
+
+.yx-top-siteNav .yx-siteNavItem .yx-noticeList .yx-noticeItem {
+    margin-left: 26px;
+}
+.yx-top-siteNav .yx-siteNavItem .yx-noticeList {
+    margin-left: 20px;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    background: url('../img/nav/d132c2561f18f1149d566a60d05fd9b7.gif') center left no-repeat;
+}
+.yx-top-siteNav .yx-top-siteNav-r{
+    float: right;
+}
+    /* 管道，左边的竖线，利用 :before 插入  */
+.yx-top-siteNav .yx-siteNavItemHd.pipe:before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+}
+    /* 客户服务右侧的 箭头 */
+    .yx-icon-yxtop {
+        background-image: url('../img/nav/one.png');
+        background-image: -webkit-image-set(url('../img/nav/one.png') 1x,url('../img/nav/two.png') 2x);
+    }
+    /* app 左边的手机图标 */
+    .yx-top-siteNav .yx-siteNavItemHd {
+        font-size: 12px;
+        height: 36px;
+        line-height: 36px;
+        cursor: pointer;
+    }
+    .yx-icon-yxtop,
+    .icon-yxtop-upArrow,
+    .icon-yxtop-app,
+    .yx-foot .yx-btn
+     {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+        font-size: 12px;
+        word-spacing: normal;
+        letter-spacing: normal;
+    }
+    .icon-yxtop-upArrow {
+        background-position: 0 -321px;
+        height: 5px;
+        width: 11px;
+    }
+    .icon-yxtop-app {
+        background-position: 0 0;
+        height: 11px;
+        width: 7px;
+    }
+    .yx-top-siteNav .yx-icon-yxtop {
+        vertical-align: middle;
+    }
+
+/* ==== 顶部的导航栏 ==== */
+.yx-top-mainNav .yx-row{
+    height: 100%;
+}
+#yx-top .yx-top-mainNav {
+    background-color: #fff;
+}
+    /* logo */
+    .yx-icon-logo {
+        background-position: 0 -146px;
+        height: 60px;
+        width: 180px;
+    }
+    .yx-logo {
+        position: absolute;
+        top: 48px;
+        left: 450px;
+    }
+    /* miniLogo */
+    .yx-top-mainNav .yx-miniLogo {
+        display: none;
+    }
+    .yx-top-mainNav .yx-func-fixed {
+        display: none;
+    }
+    .yx-icon-miniLogo {
+        background-position: 0 -216px;
+        height: 35px;
+        width: 105px;
+    }
+    .yx-func-fixed .yx-miniLogo {
+        position: absolute;
+        top: 13px;
+        left: 5px;
+        z-index: 1;
+    }
+    /* 购物车 */
+    .yx-cartEnter {
+        position: relative;
+        cursor: pointer;
+        width: 34px;
+        height: 32px;
+    }
+    /* 购物车图标 */
+    .yx-icon-cart {
+        background-position: 0 -113px;
+        height: 23px;
+        width: 23px;
+    }
+    .yx-cartEnter .yx-icon-cart {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .yx-cartEnterWrap {
+        float: right;
+        margin-top: 65px;
+        margin-right: 9px;
+        margin-left: 20px;
+    }
+    /* 购物车购买数量 */
+    .yx-icon-badge {
+        background-position: 0 -51px;
+        height: 19px;
+        width: 19px;
+    }
+    .yx-cartEnter .yx-icon-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        z-index: 1;
+    }
+/* 导航栏搜索框 */
+.yx-search {
+    position: relative;
+    float: right;
+    width: 272px;
+    height: 22px;
+    margin-top: 75px;
+}
+    /* 搜索框 */
+    .yx-search .yx-searchInput {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        border: 0;  
+        border-bottom: 1px solid #D8CEBC;
+        width: 252px;
+        overflow: hidden;
+    }
+    .yx-search .yx-searchDefaultKW {
+        position: absolute;
+        top: 5px;
+        left: 11px;
+        color: #999;
+        display: block;
+        line-height: 1;
+        cursor: text;
+        touch-action: none;
+        -ms-touch-action: none;
+        pointer-events: none;
+        -ms-pointer-events: none;
+        -webkit-user-select: none;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 230px;
+        text-overflow: ellipsis;
+    }
+    /* 搜索图标 */
+    .yx-search .yx-searchBtn {
+        float: right;
+    }
+    .icon-yx-search {
+        background-position: 0 -291px;
+        height: 20px;
+        width: 20px;
+    }
+
+/* == 主体导航栏 == */
+.yx-top-nav {
+    position: absolute;
+    bottom: 21px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 1;
+}
+.yx-top-nav .yx-siteNavItem {
+    float: left;
+    margin-top: 6px;
+    padding: 0 24px;
+    font-size: 14px;
+}
+.yx-top-nav .yx-siteNavItem.yx-firstItem{
+    margin-left: 0;
+}
+
+.yx-top-nav .yx-siteNavItem a {
+    display: block;
+    padding-bottom: 6px;
+    color: #000;
+}
+    /* 小管道 */
+    .yx-top-nav .yx-siteNavItem-split {
+        border-left: 1px solid #ccc;
+        height: 20px;
+        float: left;
+        margin-top: 5px;
+    }
+/* test //  */
+.yx-top-nav .yx-siteNavItem .yx-topLevel:hover, .yx-row .yx-top-nav .yx-firstItem a {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+/*  */
+.yx-func-fixed .yx-top-nav {
+    top: 16px;
+    left: 126px;
+    bottom: auto;
+    width: 838px;
+}
+@keyframes hdnav2-show {
+    0% {
+        top: -42px
+    }
+    100% {
+        top: 0
+    }
+}
+.yx-func-fixed {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px!important;
+    -webkit-animation: hdnav2-show .3s;
+    -moz-animation: hdnav2-show .3s;
+    -o-animation: hdnav2-show .3s;
+    animation: hdnav2-show .3s;
+}
+/* 导航栏下拉菜单 */
+.yx-siteNavItem .yx-top-nav-dropdown {
+    z-index: 999;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    padding-left: 50%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.yx-top-nav-dropdown .yx-dropdown-cateCard {
+    position: relative;
+    padding-top: 33px;
+    background-color: #fff;
+    text-align: center;
+}
+    /* 导航下拉小菜单 */
+    /* 容器 */
+.yx-top-nav-dropdown .yx-dropdown-cateCard .yx-dropdown-cateCardList {
+    width: 930px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.yx-dropdown-cateCardList .yx-dropdown-item {
+    float: left;
+    margin-right: 102px;
+    margin-bottom: 30px;
+}
+/* test */
+.yx-dropdown-cateCardList .yx-dropdown-item .yx-item-subCate:hover {
+    color: #b4a078;
+}
+    /* 小菜单图标 */
+    .yx-dropdown-cateCardList .yx-dropdown-item .yx-subCate-icon {
+        width: 44px;
+        height: 44px;
+    }
+    /* 小图标下的文字 */
+    .yx-dropdown-cateCardList .yx-dropdown-item .yx-subCate-text {
+        margin-top: 10px;
+    }
+    .yx-func-fixed .yx-search {
+        margin-top: 21px;
+        margin-right: 33px;
+        width: 20px;
+    }
+    .yx-func-fixed .yx-search .yx-searchInputWrap {
+        position: absolute;
+        display: none;
+        width: 350px;
+        height: 22px;
+        right: 20px;
+        background-color: #fff;
+    }
+    .yx-func-fixed .yx-top-nav .yx-siteNavItem {
+        margin-top: 6px;
+        padding: 0 19px;
+    }
+    .yx-func-fixed .yx-funcFixed-hide {
+        display: none!important;
+    }
+    .yx-func-fixed .yx-cartEnterWrap {
+        margin-top: 10px;
+        margin-right: 24px;
+        margin-left: 27px;
+    }
+    .yx-func-fixed .yx-func-hide {
+        display: block;
+    }
+
+/* ==== Footer ==== */
+/* before after 清楚浮动等带来的影响 */
+ 
+.yx-foot .yx-foot-top .yx-item:before {
+    content: " ";
+    display: table;
+}
+.yx-foot .yx-foot-top .yx-item:after,
+.yx-foot .yx-row::after
+{
+    clear: both;
+}
+.yx-foot .yx-foot-top .yx-service .yx-icon-service-hover,
+.yx-foot .yx-foot-top .yx-service .yx-icon-feedBack-hover
+ {
+    display: none;
+}
+.yx-foot .yx-foot-top {
+    padding-top: 60px;
+    padding-bottom: 34px;
+    background-color: #fff;
+    border-top: 1px solid #e8e8e8;
+}
+.yx-foot .yx-row .yx-item:first-child{
+    border-left: 0;
+}
+.yx-foot .yx-row .yx-item {
+    /* height: 204px; */
+    width: 33.33%;
+    float: left;
+    /* border-left: 1px solid #e9e9e9; */
+    text-align: center;
+}
+.yx-foot .yx-row .yx-item .yx-service {
+    text-align: center;
+    line-height: 1;
+}
+.yx-foot .yx-row .yx-item .yx-foot-fw{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    line-height: 1;
+}
+    /* 图标，精灵图 */
+    .yx-icon-foot {
+        background-image: url('../img/foot/footerOne.png');
+        background-image: -webkit-image-set(url('../img/foot/footerOne.png') 1x,
+                                            url('../img/foot/footerTwo.png') 2x);
+    }
+/* footer - 客户服务 */
+.yx-foot .yx-service .yx-btn {
+    width: 80px;
+    height: 100px;
+    font-size: 14px;
+    background-color: #fff;
+    padding-top: 25px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+}
+.yx-foot .yx-fw-btn .yx-foot-fw-marginTop10 {
+    margin-top: 10px;
+}
+.yx-foot .yx-fw-btn {
+    border-radius: 2px;
+    width: 96px;
+    height: 28px;
+    padding: 0;
+    vertical-align: middle;
+    letter-spacing: normal;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+/* 客户服务，两div间隔 */
+.yx-foot .yx-feedBack {
+    margin-left: 29px;
+}
+.yx-icon-service {
+    display: inline-block;
+    background-position: 0 -232px;
+    height: 26px;
+    width: 31px;
+}
+.yx-icon-feedBack {
+    display: inline-block;
+    background-position: 0 -98px;
+    height: 27px;
+    width: 30px;
+}
+
+.yx-foot .yx-item .yx-isYX {
+    text-align: center;
+    padding: 0 37px;
+}
+/* 何为严选 文本居左 */
+.yx-foot .yx-item .yx-isYX .yx-spec {
+    text-align: left;
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 22px;
+}
+
+/* 二维码下载 文本居中 */
+.yx-foot .yx-item .yx-appDownload {
+    text-align: center;
+}
+/* 二维码下面的说明小文本 */
+.yx-foot .yx-item .yx-appDownload .yx-tip {
+    color: #b4a078;
+    font-size: 12px;
+    margin-top: 3px;
+}
+/* 二维码 */
+.yx-foot .yx-item .yx-appDownload .yx-footCode canvas {
+    border: 1px solid #e9e9e9;
+}
+
+/* 深色底部 */
+.yx-foot .yx-foot-bottom {
+    height: 204px;
+    padding-top: 37px;
+    background-color: #414141;
+}
+/* 无忧，免邮，保质 三张小图 */
+    /* 文本设置，颜色，行高等 */
+    .yx-foot .yx-foot-bottom .yx-row .yx-item {
+        border-left: 0;
+    }
+    .yx-foot-bottom .yx-inner {
+        color: #fff;
+        font-size: 18px;
+        line-height: 51px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .yx-foot-bottom .yx-icon-foot {
+        float: left;
+        margin-right: 17px;
+    }
+        /* 无忧退货图标 */
+        .yx-foot-bottom .yx-icon-foot-wuyou{
+            background-position: 0 -310px;
+            height: 51px;
+            width: 51px;
+        }
+        /* 免邮图标 */
+        .yx-foot-bottom .yx-icon-foot-mianyou {
+            background-position: 0 0;
+            height: 51px;
+            width: 51px;
+        }
+        /* 保质图标 */
+        .yx-foot-bottom .yx-icon-foot-baozhi {
+            background-position: 0 -135px;
+            height: 51px;
+            width: 51px;
+        }
+
+        /* 三图描述文本 */
+        .yx-foot .yx-foot-bottom .yx-row .yx-item .yx-foot-text {
+            float: left;
+        }
+        .yx-foot .yx-foot-bottom .yx-row .yx-siteEnsure {
+            margin-bottom: 30px !important;
+        }
+        /* 清除浮动 */
+        .yx-foot .yx-row .yx-siteEnsure::after {
+            clear: both;
+        }
+    /* 底部中划线 */
+    .yx-foot .yx-foot-bottom .yx-hr {
+        height: 1px;
+        margin-bottom: 27px;
+        background-color: #4f4f4f;
+        border: 0;
+    }
+    /* 底部链接 */
+    .yx-foot .yx-siteInfo {
+        color: #999;
+        text-align: center;
+    }
+    .yx-foot .yx-foot-text {
+        text-decoration: none;
+        color: #999;
+    }
+    .yx-foot .yx-foot-split {
+        margin: auto 13px;
+    }
+    .yx-foot .yx-copyright a {
+        color: #999;
+    }
+

@@ -1,0 +1,318 @@
+/*****************************************************初始化样式****************************************/
+h1,h2,h3,h4,h5,h6,span,p,div,a,img,body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+body{
+    font:12px/180% Arial, Helvetica, sans-serif,"新宋体";
+}
+#box{
+    width: 1090px;
+    margin: 0 auto;
+}
+.lf{
+    float: left;
+}
+.rf{
+    float: right;
+}
+.cr{
+    clear: both;
+}
+/*****************************************************初始化样式****************************************/
+
+/*****************************************************公共样式****************************************/
+.title a:first-child{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+    color: #000;
+}
+.title a:first-child:hover{
+    color: #b4a078;
+}
+.title span{
+    padding-top: 13px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px;
+}
+.title a:last-child{
+    line-height: 1px;
+    /* float: right; */
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.title a:last-child:hover{
+    color: #b4a078;
+}
+.title{
+    padding-bottom:10px;
+    margin: 0 auto;
+}
+#one,#two,#three,#four,#five{
+    margin-top: 10px;
+    width:100%;
+    height: 400px;
+}
+/*****************************************************公共样式****************************************/
+
+/*****************************************************轮播图样式****************************************/
+#box1{
+    width: 1090px;
+}
+#container_bennar{
+	position:relative;
+    height:350px;
+}
+#container_bennar .item{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:350px;
+	overflow:hidden;
+	z-index:1;
+	opacity:1;
+}
+#container_bennar .item .pic{
+	/* float:left; */
+	/* width: 100%; */
+	/* height:350px; */
+	display:inline;
+	margin:15px;
+}
+#container_bennar .item .pic img{
+	/* width: 80%; */
+	height:350px;
+	vertical-align:top;
+}
+#control{
+	height:37px;
+    text-align:center;
+    position: relative;
+    z-index: 10;
+    left: 10%;
+    bottom: 30px;
+}
+#control span{
+    width:8px;
+    height:8px;
+    font-size:0;
+    line-height:0;
+    cursor:pointer;
+    display:inline-block;
+    background-color:#FEFEFE;
+    border:1px solid #BCC1C5;
+    margin:13px 2px 2px;
+}
+#control span.active{
+    background-color:#b4a078;
+    border:1px solid #6E6E6E;
+    /* border-radius: 50%; */
+}
+/*****************************************************轮播图样式****************************************/
+
+/***************************************************产品制造商样式****************************************/
+#one .one_img{
+    width: 100%;
+    position: relative;
+    transition:all .5s linear;
+}
+#one .one_img img{ 
+    transition:all .5s linear;
+} 
+#one .one_img img:hover{
+    transform: scale(1.02);
+}
+#one .one_img div{
+    float: left;
+    margin: 2px 3px 0px;
+}
+#one .one_img div div{
+    position: absolute;
+    color: #666;
+    z-index: 5;
+}
+#one .one_img div div p:first-child{
+    font-size:24px;
+    padding-bottom:15px;
+}
+#one .one_img div .text_one p:first-child{
+    font-size:20px;
+    padding-bottom:15px;
+}
+#one .one_img div div p:last-child{
+    font-size: 14px;
+    padding-top: 17px;
+    display: inline-block;
+    width: auto;
+    border-top: 1px solid #666;
+}
+#one .one_img div:first-child div{
+    left: 125px;
+    top: 45px;
+}
+#one .one_img div:first-child div:first-child p:last-child{
+    margin-left:30px;
+}
+#one .one_img div:nth-child(2) div{
+    left: 440px;
+    top: 45px;
+}
+#one .one_img div:nth-child(2) div:first-child p:last-child{
+    margin-left: 90px;
+}
+#one .one_img div:nth-child(3) div{
+    top: 35px;
+}
+#one .one_img div:nth-child(3) div:first-child p{
+    margin-left:10px;
+}
+#one .one_img div:nth-child(4) div{
+    top: 205px;
+}
+#one .one_img div:nth-child(4) div:first-child p{
+    margin-left: 10px;
+}
+/***************************************************产品制造商样式****************************************/
+
+/***************************************************新品首发样式****************************************/
+
+/***************************************************新品首发样式****************************************/
+
+/***************************************************人气推荐样式****************************************/
+#box2{
+    background-color: #f4f0ea;
+}
+#three{
+    height: 650px;
+    width: 1090px;
+    margin: 0 auto ;
+}
+#three #list_one div:first-child{
+    width: 390px;
+    height: 525px;
+    float: left;
+    margin: 5px 5px 0px;
+    background-color: #fff;
+ }
+#three #list_one div:first-child a img{
+    width: 390px;
+    height: 360px;
+    transition:all .5s linear;
+
+ }
+ #three #list_one div:first-child a img:hover{
+    transform: scale(1.02);
+ }
+#three #list_one div{
+    width: 220px;
+    height: 261px;
+    float: left;
+    margin: 5px 5px 0px;
+    background-color: #fff;
+}
+#three #list_one div a img{
+    width: 220px;
+    height: 180px;
+    transition:all .5s linear;
+ }
+ #three #list_one div a img:hover{
+    transform: scale(1.02);
+ }
+#three #btn_one,#three #btn_two{
+    cursor:pointer;
+}
+
+#three #list_two div:first-child{
+    width: 390px;
+    height: 525px;
+    float: left;
+    margin: 5px 5px 0px;
+    background-color: #fff;
+}
+#three #list_two div:first-child a img{
+    width: 390px;
+    height: 360px;
+    transition:all .5s linear;
+}
+#three #list_two div a img {
+    width: 220px;
+    height: 180px;
+    transition:all .5s linear;
+ }
+ #three #list_two div:first-child a img:hover{
+    transform: scale(1.02);
+}
+#three #list_two div a img:hover{
+    transform: scale(1.02);
+ }
+#three #list_two div{
+    width: 220px;
+    height: 261px;
+    float: left;
+    margin: 5px 5px 0px;
+    background-color: #fff;
+}
+#three #list_one{
+    display: block;
+}
+#three #list_two{
+    display: none;
+}
+#three .title span{
+    font-size: 14px;
+    margin-right: 40px;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    padding-top:10px;
+}
+#three .title span:hover{
+    color: #b4a078;
+}
+.ye{
+    color: #b4a078;
+    border-bottom: 2px solid #b4a078;
+}
+#three #list_one div a p,#three #list_two div a p{
+    color: #000;
+    text-align: center;
+    padding-top:20px;
+}
+#three #list_one div  p,#three #list_two div  p{
+    text-align: center;
+    font-size: 14px;
+    color: #d4282d;
+}
+
+#three #list_one div a p:hover,#three #list_two div a p:hover{
+    color: #b4a078;
+}
+#three #list_one div:first-child a p,#three #list_two div:first-child a p{
+    margin-top: 40px;
+     font-size: 18px;
+ }
+#three #list_one div:first-child  p,#three #list_two div:first-child  p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#three .title{
+    padding-top:40px;
+}
+/***************************************************人气推荐样式****************************************/

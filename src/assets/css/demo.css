@@ -1,0 +1,195 @@
+/*****************************************************公共样式****************************************/
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+a,img{
+    border:0;
+}
+body{
+    font:12px/180% Arial, Helvetica, sans-serif,"新宋体";
+}
+.cr{
+    clear: both;
+}
+.title a:first-child{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+    color: #000;
+}
+.title a:first-child:hover{
+    color: #b4a078;
+}
+.title span{
+    padding-top: 13px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px;
+}
+.title a:last-child{
+    line-height: 1px;
+    float: right;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.title a:last-child:hover{
+    color: #b4a078;
+}
+.title{
+    padding-bottom:10px;
+    margin: 0 auto;
+}
+#one,#two,#three,#four,#five{
+    margin-top: 10px;
+    border: 1px solid red;
+    width:100%;
+    height: 400px;
+}
+#box{
+    border: 1px solid #000;
+    width: 1090px;
+}
+#focus_Box{
+    border: 1px solid red;
+}
+/*****************************************************公共样式****************************************/
+
+/*****************************************************轮播图样式****************************************/
+/* focus_Box */
+#focus_Box{
+    position:relative;
+    width: 100%;
+    height:310px;
+    margin:10px auto 30px;
+}
+#focus_Box ul{
+    position:relative;
+    width:710px;
+    height:120px;
+}
+#focus_Box li{
+    z-index:0;
+    position:absolute;
+    width:0px;
+    background:#787878;
+    height:0px;
+    top:146px;
+    cursor:pointer;
+    left:377px;
+    border-radius:4px;
+    /*box-shadow:1px 1px 12px rgba(200, 200, 200, 1)*/
+}
+#focus_Box li img{
+    width:1090px;
+    background:url(../img/recommend/loading.gif) no-repeat center 50%;
+    height:100%;
+    vertical-align:top
+}
+#focus_Box .prev,#focus_Box .next{
+    display:block;
+    z-index:100;
+    overflow:hidden;
+    cursor:pointer;
+    position:absolute;
+    width:52px;
+    height:52px;
+    top:131px;
+}
+#focus_Box .prev{
+    background:url(../img/recommend/btn.png) left bottom no-repeat;
+    left:0px
+}
+#focus_Box .next{
+    background:url(../img/recommend/btn.png) right bottom no-repeat;
+    right:0px
+}
+#focus_Box .prev:hover{
+    background-position:left top;
+}
+#focus_Box .next:hover{
+    background-position:right top;
+}
+#focus_Box a.imgs-scroll-btn{
+    display:block;
+    position:absolute;
+    z-index:110;
+    top:7px;
+    right:15px;
+    width:51px;
+    height:23px;
+    overflow:hidden;
+    background:url(../img/recommend/share-btn.png) no-repeat;
+    text-indent:-999px;
+}
+/*****************************************************轮播图样式****************************************/
+
+/***************************************************产品制造商样式****************************************/
+#one .one_img{
+    width: 100%;
+    position: relative;
+}
+#one .one_img div{
+    float: left;
+    margin: 2px 3px 0px;
+}
+#one .one_img div div{
+    position: absolute;
+    color: #666;
+}
+#one .one_img div div p:first-child{
+    font-size:24px;
+    padding-bottom:15px;
+}
+#one .one_img div .text_one p:first-child{
+    font-size:20px;
+    padding-bottom:15px;
+}
+#one .one_img div div p:last-child{
+    font-size: 14px;
+    padding-top: 17px;
+    display: inline-block;
+    width: auto;
+    border-top: 1px solid #666;
+}
+#one .one_img div:first-child div{
+    left: 125px;
+    top: 45px;
+}
+#one .one_img div:first-child div:first-child p:last-child{
+    margin-left:30px;
+}
+
+#one .one_img div:nth-child(2) div{
+    left: 440px;
+    top: 45px;
+}
+#one .one_img div:nth-child(2) div:first-child p:last-child{
+    margin-left: 90px;
+}
+#one .one_img div:nth-child(3) div{
+    top: 35px;
+}
+#one .one_img div:nth-child(3) div:first-child p{
+    margin-left:10px;
+}
+#one .one_img div:nth-child(4) div{
+    top: 205px;
+}
+#one .one_img div:nth-child(4) div:first-child p{
+    margin-left: 10px;
+}
+/***************************************************产品制造商样式****************************************/
+
+/***************************************************新品首发样式****************************************/
+
+/***************************************************新品首发样式****************************************/
