@@ -16,7 +16,7 @@ ul,p,h1,h2,h3,h4,h5,h6,dl,dd,hr{
   background:url(../img/login//1.jpg);
   background-repeat:no-repeat;
   background-size:100% 100%;
-  margin:10% auto;
+  /* margin:10% auto; */
 }
 /* logo背景图 */
 #container div.logo{
